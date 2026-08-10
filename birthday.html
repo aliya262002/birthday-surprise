@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#ff416c"
+    >
+
+    <meta
+        name="description"
+        content="A special birthday surprise for Adv. Arslan Khan from his sister."
+    >
+
+    <title>Happy Birthday Adv. Arslan Khan</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     MUSIC
+====================================================== -->
+
+<audio
+    id="birthdayMusic"
+    loop
+    preload="auto"
+>
+    <source
+        src="music/birthday.mp3"
+        type="audio/mpeg"
+    >
+
+    Your browser does not support audio.
+
+</audio>
+
+
+<!-- MUSIC BUTTON -->
+
+<button
+    id="musicButton"
+    class="music-button"
+    type="button"
+    aria-label="Play or pause birthday music"
+>
+
+    🎵 <span>Play Music</span>
+
+</button>
+
+
+
+<!-- =====================================================
+     BACKGROUND
+====================================================== -->
+
+<div
+    class="birthday-background"
+    aria-hidden="true"
+></div>
+
+
+<div
+    class="birthday-glow birthday-glow-one"
+    aria-hidden="true"
+></div>
+
+
+<div
+    class="birthday-glow birthday-glow-two"
+    aria-hidden="true"
+></div>
+
+
+<div
+    class="birthday-glow birthday-glow-three"
+    aria-hidden="true"
+></div>
+
+
+
+<!-- =====================================================
+     LARGE BALLOONS
+====================================================== -->
+
+<div
+    class="birthday-balloon balloon-a"
+    aria-hidden="true"
+>
+    <span></span>
+</div>
+
+
+<div
+    class="birthday-balloon balloon-b"
+    aria-hidden="true"
+>
+    <span></span>
+</div>
+
+
+<div
+    class="birthday-balloon balloon-c"
+    aria-hidden="true"
+>
+    <span></span>
+</div>
+
+
+<div
+    class="birthday-balloon balloon-d"
+    aria-hidden="true"
+>
+    <span></span>
+</div>
+
+
+
+<!-- =====================================================
+     SPARKLES
+====================================================== -->
+
+<div
+    class="birthday-sparkles"
+    aria-hidden="true"
+>
+
+    <span>✦</span>
+    <span>✧</span>
+    <span>✨</span>
+    <span>✦</span>
+    <span>✧</span>
+    <span>✨</span>
+
+</div>
+
+
+
+<!-- =====================================================
+     MAIN BIRTHDAY CONTENT
+====================================================== -->
+
+<main class="birthday-page">
+
+
+    <section class="birthday-content">
+
+
+        <!-- =================================================
+             KICKER
+        ================================================== -->
+
+        <div class="birthday-kicker">
+
+            ✨ 🎉 TODAY IS YOUR SPECIAL DAY 🎉 ✨
+
+        </div>
+
+
+
+        <!-- =================================================
+             MAIN TITLE
+        ================================================== -->
+
+        <h1 class="birthday-title">
+
+            HAPPY BIRTHDAY
+
+        </h1>
+
+
+
+        <!-- =================================================
+             NAME
+        ================================================== -->
+
+        <h2 class="birthday-name">
+
+            Adv.Arslan Khan
+
+        </h2>
+
+
+
+        <!-- =================================================
+             BHAI
+        ================================================== -->
+
+        <div class="birthday-bhai">
+
+            ❤️ OUR DEAR BHAI ❤️
+
+        </div>
+
+
+
+        <!-- =================================================
+             BIRTHDAY DECORATION
+        ================================================== -->
+
+        <div
+            class="birthday-decoration"
+            aria-hidden="true"
+        >
+
+            🎈 &nbsp; 🎂 &nbsp; 🎈 &nbsp; 🎁 &nbsp; 🎈
+
+        </div>
+
+
+
+        <!-- =================================================
+             CAKE
+        ================================================== -->
+
+        <div
+            class="birthday-cake"
+            id="birthdayCake"
+            title="Click the cake!"
+            role="button"
+            tabindex="0"
+            aria-label="Birthday cake"
+        >
+
+
+            <!-- Candles -->
+
+            <div class="cake-candle candle-one">
+                <span></span>
+            </div>
+
+
+            <div class="cake-candle candle-two">
+                <span></span>
+            </div>
+
+
+            <div class="cake-candle candle-three">
+                <span></span>
+            </div>
+
+
+            <!-- Cake -->
+
+            <div class="cake-top"></div>
+
+            <div class="cake-middle"></div>
+
+            <div class="cake-bottom"></div>
+
+            <div class="cake-plate"></div>
+
+
+        </div>
+
+
+
+        <p class="cake-hint">
+
+            🕯️ Make a wish, Bhai! 🕯️
+
+        </p>
+
+
+
+        <!-- =================================================
+             BIRTHDAY MESSAGE CARD
+        ================================================== -->
+
+        <div class="birthday-message-card">
+
+
+            <div class="birthday-message-icon">
+
+                🤲
+
+            </div>
+
+
+            <p class="birthday-message">
+
+                May Allah bless you with happiness,
+                success, good health, peace and
+                countless beautiful moments in life. ❤️
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             SISTER MESSAGE
+        ================================================== -->
+
+        <div class="birthday-sister-card">
+
+
+            <div class="sister-heart">
+
+                💖
+
+            </div>
+
+
+            <p class="birthday-from-sister">
+
+                With endless love and duas,
+
+                <strong>
+                    Your Sister ❤️
+                </strong>
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             ACTIONS
+        ================================================== -->
+
+        <div class="birthday-actions">
+
+
+            <!-- BIG CELEBRATE BUTTON -->
+
+            <button
+                type="button"
+                id="celebrateButton"
+                class="celebrate-button birthday-celebrate-button"
+            >
+
+                <span class="celebrate-sparkle">
+                    ✨
+                </span>
+
+                <span class="celebrate-text">
+                    🎉 CELEBRATE BHAI! 🎉
+                </span>
+
+                <span class="celebrate-sparkle">
+                    ✨
+                </span>
+
+            </button>
+
+
+
+            <!-- NEXT PAGE -->
+
+            <a
+                href="memories.html"
+                class="next-page-button"
+            >
+
+                <span>
+                    📸 MEMORIES
+                </span>
+
+                <strong>
+                    →
+                </strong>
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             BOTTOM MESSAGE
+        ================================================== -->
+
+        <div class="birthday-bottom-message">
+
+            <span>❤️</span>
+
+            <p>
+                May your smile always shine this bright.
+            </p>
+
+            <span>❤️</span>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     CONFETTI CONTAINER
+====================================================== -->
+
+<div
+    id="confettiContainer"
+    class="confetti-container"
+    aria-hidden="true"
+></div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

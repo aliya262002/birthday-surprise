@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Bhai | Adv. Arslan Khan</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page surprise-page">
+
+    <div class="cinematic-vignette"></div>
+
+    <div id="confetti-container"></div>
+    <div id="fireworks-container"></div>
+
+    <div class="cinematic-curtain curtain-left"></div>
+    <div class="cinematic-curtain curtain-right"></div>
+
+    <div class="countdown-overlay" id="countdownOverlay">
+
+        <p>YOUR SURPRISE BEGINS IN</p>
+
+        <div id="countdownNumber">
+            3
+        </div>
+
+    </div>
+
+
+    <div class="balloon balloon-a">🎈</div>
+    <div class="balloon balloon-b">🎈</div>
+    <div class="balloon balloon-c">🎈</div>
+    <div class="balloon balloon-d">🎈</div>
+
+
+    <main class="reveal-screen">
+
+        <section class="reveal-content">
+
+            <p class="cinematic-label reveal-label">
+                ✦ TODAY IS YOUR DAY ✦
+            </p>
+
+            <h1 class="mega-title">
+                HAPPY
+                <span>BIRTHDAY</span>
+            </h1>
+
+            <div class="name-plaque">
+                Adv. ARSLAN KHAN
+            </div>
+
+            <div class="cake-big">
+                🎂
+            </div>
+
+            <p class="reveal-message">
+                To an amazing brother,
+                <br>
+                may your new chapter be brighter than ever.
+            </p>
+
+            <button
+                class="cinematic-button celebrate-main-button"
+                onclick="celebrateBhai()"
+            >
+                🎉 CELEBRATE BHAI 🎉
+            </button>
+
+            <div class="quick-navigation">
+
+                <a href="memories.html" class="glass-button">
+                    📸 Memories
+                </a>
+
+                <a href="letter.html" class="glass-button">
+                    💌 Letter
+                </a>
+
+                <a href="wishes.html" class="glass-button">
+                    ✨ Wishes
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <button
+        id="musicButton"
+        class="music-control"
+        onclick="toggleMusic()"
+    >
+        🎵 Music
+    </button>
+
+
+    <audio
+        id="birthdayMusic"
+        loop
+        preload="auto"
+    >
+        <source
+            src="music/birthday.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
